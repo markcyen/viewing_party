@@ -1,1 +1,4 @@
-<h1>Welcome <%= @user.email %>!</h1>
+
+<h1>Welcome, <%= @user.email %>!</h1>
+
+<h4><%= link_to "Log Out", "/logout", method: :delete %></h4>

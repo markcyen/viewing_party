@@ -8,8 +8,8 @@ class UsersController < ApplicationController
     user[:email] = user[:email].downcase
     new_user = User.new(user)
     if new_user.save
-      redirect_to "/users/#{new_user.id}/dashboard"
-      flash[:success] = "Welcome, #{new_user.email}!"
+      session[:user_id] = new_user.id
+      redirect_to "/dashboard"
     else
       flash[:error] = new_user.errors.full_messages.join + "! Please try again!"
       redirect_to '/register'
