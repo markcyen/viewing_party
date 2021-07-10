@@ -11,7 +11,7 @@ class UsersController < ApplicationController
       session[:user_id] = new_user.id
       redirect_to "/dashboard"
     else
-      flash[:error] = new_user.errors.full_messages.join + "! Please try again!"
+      flash[:error] = "#{new_user.errors.full_messages.join}! Please try again!"
       redirect_to '/register'
     end
   end

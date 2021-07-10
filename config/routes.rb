@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   post '/users', to: 'users#create'
 
   get '/dashboard', to: 'dashboard#index'
+  get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
   get '/discover', to: 'discover#show'
+
+  post '/friends', to: 'friends#create'
 end

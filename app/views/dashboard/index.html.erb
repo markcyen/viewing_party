@@ -5,16 +5,23 @@
 
 <h2><%= button_to "Discover Movies", '/discover', method: :get %></h2>
 
-<%= form_with url: "/friends", method: :get, local: true do |f| %>
-  <%= f.label :search %>
-  <%= f.text_field :search %>
-  <%= f.submit "Add Friend", form: {style: 'display:inline-block;'} %>
-<% end %>
+<section id="search_friend">
+  <%= form_with url: '/friends', method: :post, local: true do |f| %>
+    <%= f.label "Search Friend:" %>
+    <%= f.text_field :email %>
+    <%= f.submit "Add Friend" %>
+  <% end %>
+</section>
 
-# <% if params[:search] %>
-  # <% @friends_search.each do |friend| %>
-    # <div><%= friend.email %></div><br/>
-  # <% end %>
-# <% end %>
+<div id="friends list">
+  <h3>Friends List</h3>
+  <% if @user.friends.empty? %>
+    <p>No friends have been added to your list</p>
+  <% else %>
+    <% @user.friends.each do |friend| %>
+      <div><%= friend.email %></div><br/>
+    <% end %>
+  <% end %>
+</div>
 
 <h2>Viewing Parties</h2>
