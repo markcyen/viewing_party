@@ -5,7 +5,7 @@ RSpec.describe "Dashboard Page" do
     before :each do
       @user = User.create!(email: "andrewpatrick138@gmail.com", password: "cowboy1138")
       @user_2 = User.create!(email: "marky123@gmail.com", password: "spacemonkey123")
-      @user_3 = User.create!(email: "brianz123@gmail.com", password: "happymonkey123")
+      @user_3 = User.create!(email: "BrianZ123@gmail.com", password: "happymonkey123")
       
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
 
@@ -30,15 +30,22 @@ RSpec.describe "Dashboard Page" do
       expect(page).to have_content('No friends have been added to your list')
     end
 
-    it 'displays a friend when added to friends list section' do
+    it 'displays friends when added to friends list section with downcase (ActiveRecord)' do
       within("#search_friend") do
         fill_in 'email', with: @user_2.email
+        click_on "Add Friend"
+      end
+
+      within("#search_friend") do
+        fill_in 'email', with: @user_3.email
         click_on "Add Friend"
       end
       
       expect(current_path).to eq('/dashboard')
       expect(page).to_not have_content('No friends have been added to your list')
       expect(page).to have_content(@user_2.email)
+      # Utilize ActiveRecord of downcased email to be shown on dashboard
+      expect(page).to have_content("BrianZ123@gmail.com")
     end
 
     it 'displays error message when entering user email (sad path)' do
