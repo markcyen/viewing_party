@@ -17,7 +17,8 @@ RSpec.describe "Movie Index" do
 
     expect(current_path).to eq(movies_path)
     expect(page.status_code).to eq(200)
-
-    expect(page).to have_content("")
+    movie_list = find("#top_movies").all("div") 
+    expect(movie_list.size).to eq(20)
+    expect(page).to have_content("The Shawshank Redemption")
   end
 end
