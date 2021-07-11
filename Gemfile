@@ -18,8 +18,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
-gem "figaro"
+gem 'faraday'
 
 group :development, :test do
   gem 'pry'
@@ -28,6 +27,7 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'faker'
   gem 'factory_bot_rails'
+  gem 'figaro'
 end
 
 group :development do
@@ -42,6 +42,7 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
+  gem 'webmock'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
