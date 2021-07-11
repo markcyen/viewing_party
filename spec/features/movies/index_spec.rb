@@ -12,13 +12,19 @@ RSpec.describe "Movie Index" do
   end
 
   it "displays top rated movies" do
-
+    response_body = File.read("spec/fixtures/top_movies.json")
+    stub_request(:get, "https://api.themoviedb.org/3/movie/top_rated?api_key=fc8f9a61e60adef6d5af436d96592863").
+      to_return(status: 200, body: response_body, headers: {})
     click_button "Find Top Rated Movies"
 
     expect(current_path).to eq(movies_path)
     expect(page.status_code).to eq(200)
     movie_list = find("#top_movies").all("div") 
     expect(movie_list.size).to eq(20)
-    expect(page).to have_content("The Shawshank Redemption")
+
+    within("#top_movies") do
+      expect(page).to have_content("The Shawshank Redemption")
+      expect(page).to have_content("Gabriel's Inferno Part II")
+    end 
   end
 end
