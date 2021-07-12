@@ -1,0 +1,370 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/rSPw7tgCH9c6NqICZef4kZjFOQ5.jpg",
+            "genre_ids": [
+                18,
+                80
+            ],
+            "id": 238,
+            "original_language": "en",
+            "original_title": "The Godfather",
+            "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+            "popularity": 48.416,
+            "poster_path": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+            "release_date": "1972-03-14",
+            "title": "The Godfather",
+            "video": false,
+            "vote_average": 8.7,
+            "vote_count": 14505
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/poec6RqOKY9iSiIUmfyfPfiLtvB.jpg",
+            "genre_ids": [
+                18,
+                80
+            ],
+            "id": 240,
+            "original_language": "en",
+            "original_title": "The Godfather: Part II",
+            "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
+            "popularity": 31.688,
+            "poster_path": "/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+            "release_date": "1974-12-20",
+            "title": "The Godfather: Part II",
+            "video": false,
+            "vote_average": 8.6,
+            "vote_count": 8676
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/cAKf3fnIV1AyDghzqI3xxjK1v0S.jpg",
+            "genre_ids": [
+                80,
+                18,
+                53
+            ],
+            "id": 242,
+            "original_language": "en",
+            "original_title": "The Godfather: Part III",
+            "overview": "In the midst of trying to legitimize his business dealings in 1979 New York and Italy, aging mafia don, Michael Corleone seeks forgiveness for his sins while taking a young protege under his wing.",
+            "popularity": 24.543,
+            "poster_path": "/lm3pQ2QoQ16pextRsmnUbG2onES.jpg",
+            "release_date": "1990-12-25",
+            "title": "The Godfather: Part III",
+            "video": false,
+            "vote_average": 7.4,
+            "vote_count": 4412
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tYjyk4Ij7CwVOn2ovcXdRYffR9k.jpg",
+            "genre_ids": [
+                80,
+                18
+            ],
+            "id": 364150,
+            "original_language": "en",
+            "original_title": "The Godfather Trilogy: 1901-1980",
+            "overview": "The multigenerational saga of the rise and fall of the Corleone crime family. Story is told in chronological order, and numerous scenes that were deleted from each film have been restored.",
+            "popularity": 11.167,
+            "poster_path": "/rwEP0RwpF2mKGRbs7jerdC4aeMB.jpg",
+            "release_date": "1992-10-17",
+            "title": "The Godfather Trilogy: 1901-1980",
+            "video": true,
+            "vote_average": 9.1,
+            "vote_count": 107
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/27tIbnvQt8zM26M96Uv0Zz0FDLR.jpg",
+            "genre_ids": [
+                99,
+                80
+            ],
+            "id": 598065,
+            "original_language": "en",
+            "original_title": "Our Godfather",
+            "overview": "OUR GODFATHER is a feature-length documentary about Tommaso Buscetta, the first high-ranking Italian mafia boss ever to turn against Cosa Nostra. Buscetta helped convict more than 400 Mafiosi. He became the Mob's most wanted man in the world - and 11 members of his family were killed. \"He was the most important, protected and endangered witness in US criminal history\" The film tells - for the first time- the Buscetta story with exclusive access to his family, which is breaking its silence after 30 years in hiding.",
+            "popularity": 5.055,
+            "poster_path": "/xcwFhCR3LG8WkxqgIxUYrbJ9LHg.jpg",
+            "release_date": "2019-04-28",
+            "title": "Our Godfather",
+            "video": false,
+            "vote_average": 6.4,
+            "vote_count": 51
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lrTKanWOB7tyOrK2m93pffSJoaS.jpg",
+            "genre_ids": [
+                99
+            ],
+            "id": 606215,
+            "original_language": "en",
+            "original_title": "The Black Godfather",
+            "overview": "Follows the life of Clarence Avant, the ultimate, uncensored mentor and behind-the-scenes rainmaker in music, film, TV and politics.",
+            "popularity": 4.745,
+            "poster_path": "/3BQArnXPwM5nHeS1tlGKLY7eapP.jpg",
+            "release_date": "2019-06-07",
+            "title": "The Black Godfather",
+            "video": false,
+            "vote_average": 6.7,
+            "vote_count": 19
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                28,
+                80,
+                53
+            ],
+            "id": 80755,
+            "original_language": "en",
+            "original_title": "The Black Godfather",
+            "overview": "The heroes in The Black Godfather are members of an African-American criminal organization. Like Brando in The Godfather, they're not averse to robbery and murder, but they do draw the line at narcotics. When the Mafia infiltrates the 'hood with dangerous drugs, the Black Godfather (Rod Perry) orders his minions to put an end to this perfidy.",
+            "popularity": 1.933,
+            "poster_path": "/4B7wQFfKlcAS3QFL95iSnYcdlfJ.jpg",
+            "release_date": "1974-09-03",
+            "title": "The Black Godfather",
+            "video": false,
+            "vote_average": 5,
+            "vote_count": 8
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/7oonURUE9oDWGX2bjYjj680Bp5R.jpg",
+            "genre_ids": [
+                28,
+                35,
+                80
+            ],
+            "id": 77403,
+            "original_language": "en",
+            "original_title": "Disco Godfather",
+            "overview": "Retired cop and celebrity DJ Tucker Williams (aka The Disco Godfather) takes to the streets as a dangerous hallucinogenic drug called Angel Dust begins to take hold of the neighborhood.",
+            "popularity": 1.646,
+            "poster_path": "/tjHQ0VD4qnb4TFsJlt1MC6hf7V6.jpg",
+            "release_date": "1979-09-04",
+            "title": "Disco Godfather",
+            "video": false,
+            "vote_average": 5.7,
+            "vote_count": 16
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99
+            ],
+            "id": 294636,
+            "original_language": "en",
+            "original_title": "The Godfather Legacy",
+            "overview": "THE GODFATHER LEGACY goes deep inside Francis Ford Coppola's epic saga about the Corleone crime family and reveals how the Academy Award-winning film and its sequels became one of the most acclaimed franchises in Hollywood history. Featuring iconic scenes from all three films, never before seen home movies and insightful interviews with filmmakers (Francis Ford Coppola, All Ruddy and Peter Bart), actors (Al Pacino, James Caan, Talia Shire, Joe Mantegna, et al.), law enforcement officials and even former Mafia members. This feature length documentary illustrates why The Godfather trilogy continues to entertain and fascinate audiences and how it continues to impact the way society views everything from capitalism to crime.",
+            "popularity": 2.825,
+            "poster_path": "/9y9w5prvVjBtwWl9TNtvThL0NNi.jpg",
+            "release_date": "2012-07-12",
+            "title": "The Godfather Legacy",
+            "video": false,
+            "vote_average": 7.2,
+            "vote_count": 11
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/c1vrJxyuKhswMm9IbRJJhsFXm0I.jpg",
+            "genre_ids": [
+                99
+            ],
+            "id": 56205,
+            "original_language": "en",
+            "original_title": "The Godfather Family: A Look Inside",
+            "overview": "A documentary on the making of the three Godfather films, with interviews and recollections from the film makers and cast. This feature also includes the original screen tests of some of the actors for \"The Godfather\" film, and some candid moments on the set of \"The Godfather: Part III.\"",
+            "popularity": 3.221,
+            "poster_path": "/2Ex3ynNc95pxkeLmwvGeYVWjKta.jpg",
+            "release_date": "1990-07-12",
+            "title": "The Godfather Family: A Look Inside",
+            "video": false,
+            "vote_average": 7.7,
+            "vote_count": 24
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                28,
+                35,
+                53
+            ],
+            "id": 70829,
+            "original_language": "ko",
+            "original_title": "The Last Godfather",
+            "overview": "Young-goo the son of mafia boss Don Carini, is too foolish to be part of the mafia elite. One day, Young-goo comes to his father and is trained by Tony V to be his father's successor. A few days later, Young-goo accidentally rescues Nancy, the only daughter of Don Bonfante, the boss of a rival mafia family. But Vinnie, an under-boss of the Bonfante family kidnapped her and fabricates that Young-goo has taken her. Vinnie's behavior provokes an armed conflict between the two families.",
+            "popularity": 0.748,
+            "poster_path": "/bRqrRcNMG9GNCtgTGM9uFGv0JjE.jpg",
+            "release_date": "2010-12-29",
+            "title": "The Last Godfather",
+            "video": false,
+            "vote_average": 4.6,
+            "vote_count": 11
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 755450,
+            "original_language": "kn",
+            "original_title": "Godfather",
+            "overview": "A 2012 Kannada film",
+            "popularity": 0.6,
+            "poster_path": "/ipV6QtfFnrj80Ar2eH24gjSZHir.jpg",
+            "release_date": "2012-07-27",
+            "title": "Godfather",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                35
+            ],
+            "id": 73725,
+            "original_language": "en",
+            "original_title": "The Godfather of Green Bay",
+            "overview": "Joe Keegan is the 'Rocky' of stand-up comedy. A fifteen-year comedy veteran who was pegged for stardom early on in his career but has blown every major audition he has ever had in legendary fashion. Fresh off a recent fiasco with a heckler that included a broken nose, Joe's friend Kenny tells him he can get them an audition for 'The Tonight Show' and that it's 'a can't miss.' The one catch is that it's at a roadside bar in tiny Pine Lake, Wisconsin, hometown of Tonight Show Talent scout, Harvey Skorik who never misses 'Rocktoberfest.' Having doubts but needing a break from L.A., Joe reluctantly agrees to go. Arriving in Wisconsin, Joe bombs his first night on stage when local emcee Dug sabotages him. Joe cannot get a break until he encounters his former high school English teacher, the beautiful Molly Mahoney who is also at a crossroads in her life.",
+            "popularity": 1.864,
+            "poster_path": "/83uAEy4jLR1QpkUmsx3YHTpP1vB.jpg",
+            "release_date": "2005-04-20",
+            "title": "The Godfather of Green Bay",
+            "video": false,
+            "vote_average": 3.8,
+            "vote_count": 3
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                99
+            ],
+            "id": 409523,
+            "original_language": "en",
+            "original_title": "The Godfather and the Mob",
+            "overview": "The Godfather And The Mob reveals the true life story of murder, mafia and mayhem that occurred behind the scenes of the most iconic gangster film ever made.",
+            "popularity": 1.242,
+            "poster_path": "/80aomGBillepc6qNvSfWRcp9QSZ.jpg",
+            "release_date": "2006-04-25",
+            "title": "The Godfather and the Mob",
+            "video": false,
+            "vote_average": 7,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [
+                28
+            ],
+            "id": 187738,
+            "original_language": "en",
+            "original_title": "Godfather from Canton",
+            "overview": "A coolie is ofter a job a policeman after saving a government official, and through treachery and corruption rises through the ranks of the police, then becomes a gangster.",
+            "popularity": 0.6,
+            "poster_path": "/9VARFHoJhLQxjnvOADEj2r1rnF2.jpg",
+            "release_date": "1982-06-11",
+            "title": "Godfather from Canton",
+            "video": false,
+            "vote_average": 3,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 554008,
+            "original_language": "en",
+            "original_title": "Godfather I",
+            "overview": "A short film by Maria Lassnig, shot in 1974.",
+            "popularity": 0.603,
+            "poster_path": null,
+            "release_date": "2018-01-29",
+            "title": "Godfather I",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 554009,
+            "original_language": "en",
+            "original_title": "Godfather II",
+            "overview": "A short film by Maria Lassnig, shot in 1974.",
+            "popularity": 0.6,
+            "poster_path": null,
+            "release_date": "2018-01-29",
+            "title": "Godfather II",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 554010,
+            "original_language": "en",
+            "original_title": "Godfather III",
+            "overview": "A short film by Maria Lassnig, shot in 1974.",
+            "popularity": 0.6,
+            "poster_path": null,
+            "release_date": "2018-01-29",
+            "title": "Godfather III",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "genre_ids": [],
+            "id": 526803,
+            "original_language": "en",
+            "original_title": "Fred: The Godfather of British Crime",
+            "overview": "This is an examination into the psyche of former London gangster Freddie Foreman: 85 years old, allegedly responsible for multiple murders, and nearing the end of his life. Fred is the only gangster who lived through the turbulent history of the British underworld and survived to tell the tale.",
+            "popularity": 1.918,
+            "poster_path": "/zQdHIcI3du3xBB9nl6HEdfrExkB.jpg",
+            "release_date": "2018-04-20",
+            "title": "Fred: The Godfather of British Crime",
+            "video": false,
+            "vote_average": 7.2,
+            "vote_count": 6
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/j4wwKS0aokfGe7QDYqU2k6744hi.jpg",
+            "genre_ids": [
+                99,
+                27
+            ],
+            "id": 58862,
+            "original_language": "en",
+            "original_title": "Herschell Gordon Lewis: The Godfather of Gore",
+            "overview": "Take an outrageous ride through this wild world of exploitation films with this thoroughly entertaining documentary, HERSCHELL GORDON LEWIS – THE GODFATHER OF GORE! Featuring cult director John Waters, Drive-In Movie Critic Joe Bob Briggs, Herschell Gordon Lewis himself and a “cast of thousands,” you’ll witness the innocent bare-naked era of Nudie-Cuties before Lewis schocked the world with “Blood Feast,” the first ever gore film!",
+            "popularity": 2.307,
+            "poster_path": "/mzwiMxr0a5xOe3R8d5c2DlkCYzM.jpg",
+            "release_date": "2010-06-01",
+            "title": "Herschell Gordon Lewis: The Godfather of Gore",
+            "video": false,
+            "vote_average": 6.7,
+            "vote_count": 16
+        }
+    ],
+    "total_pages": 5,
+    "total_results": 87
+}
