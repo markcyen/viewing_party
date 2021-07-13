@@ -12,6 +12,9 @@ Viewing party is an application in which users can explore movie options and cre
 2. Install gem packages: `bundle install`
 3. Setup the database: `rails db:create`
 
+## Our Schema
+
+![Viewing Party Schema](/app/assets/images/schema.jpg "Viewing Party Schema")
 
 ## Versions
 
