@@ -11,4 +11,11 @@ class MovieFacade
       Movie.new(movie)
     end
   end
+
+  def self.get_movie_details(movie_id)
+    found_movie = MovieService.find_movie(movie_id)
+    found_movie.map do |movie|
+      Movie.new(movie)
+    end
+  end
 end

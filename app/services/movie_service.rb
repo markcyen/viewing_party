@@ -25,6 +25,15 @@ class MovieService
     parse_json(response_1)[:results] + parse_json(response_2)[:results]
   end
 
+  def self.find_movie(movie_id)
+    response = Faraday.get("https://api.themoviedb.org/3/movie/#{movie_id}") do |req|
+      req.params['api_key'] = ENV['api_key']
+      req.params['language'] = 'en-US'
+    end
+
+    parse_json(response)
+  end
+
   def self.parse_json(response)
     JSON.parse(response.body, symbolize_names: true)
   end
