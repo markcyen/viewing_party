@@ -1,8 +1,25 @@
 <h1>Welcome <%= @user.email %>!</h1>
 
-<section id="top_movies">
-  <% @movies_array.each do |movie| %>
-    <div> <%= movie[:title] %> <%= movie[:vote_average] %> </div> <br/>
-  <% end %>
-</section>
+<h4><%= link_to "Log Out", "/logout", method: :delete %></h4>
 
+<h2><%= button_to "Find Top Rated Movies", movies_path, method: :get %></h2>
+
+<%= form_with url: '/movies', method: :get, local: true do |f| %>
+  <%= f.label 'Search by Movie Title:' %>
+  <%= f.text_field :title %>
+  <%= f.submit "Find Movies" %>
+<% end %>
+
+<% if params[:title] %>
+  <section id="search_movies">
+    <% @search_movie.each do |movie| %>
+      <div><%= movie[:title] %> <%=movie[:vote_average] %></div><br/>
+    <% end %>
+  </section>
+<% else %>
+  <section id="top_movies">
+    <% @top_movies_array.each do |movie| %>
+      <div> <%= movie[:title] %> <%= movie[:vote_average] %> </div> <br/>
+    <% end %>
+  </section>
+<% end %>
