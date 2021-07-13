@@ -6,13 +6,13 @@ class UsersController < ApplicationController
   def create
     user = user_params
     user[:email] = user[:email].downcase
-    new_user = User.new(user)
+    new_user = User.create(user)
     if new_user.save
       session[:user_id] = new_user.id
-      redirect_to "/dashboard"
+      redirect_to dashboard_path
     else
       flash[:error] = "#{new_user.errors.full_messages.join}! Please try again!"
-      redirect_to '/register'
+      redirect_to register_path
     end
   end
 
