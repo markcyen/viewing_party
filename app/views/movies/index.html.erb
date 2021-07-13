@@ -6,20 +6,20 @@
 
 <%= form_with url: '/movies', method: :get, local: true do |f| %>
   <%= f.label 'Search by Movie Title:' %>
-  <%= f.text_field :title %>
+  <%= f.text_field :search %>
   <%= f.submit "Find Movies" %>
 <% end %>
 
-<% if params[:title] %>
+<% if params[:search] %>
   <section id="search_movies">
     <% @search_movie.each do |movie| %>
-      <div><%= movie[:title] %> <%=movie[:vote_average] %></div><br/>
+      <div><%= movie.title %> <%=movie.vote_average %></div><br/>
     <% end %>
   </section>
 <% else %>
   <section id="top_movies">
-    <% @top_movies_array.each do |movie| %>
-      <div> <%= movie[:title] %> <%= movie[:vote_average] %> </div> <br/>
+    <% @top_40.each do |movie| %>
+      <div> <%= movie.title %> <%= movie.vote_average %> </div> <br/>
     <% end %>
   </section>
 <% end %>

@@ -2,7 +2,7 @@
 
 <h4>Note: Create a password with at least 8 characters</h4>
 
-<%= form_with model: @user do |f| %>
+<%= form_with model: @user, url: register_path, local: true do |f| %>
   <%= f.label :email, 'Email:' %>
   <%= f.text_field :email %></br><br/>
   <%= f.label :password, 'Password:' %>
