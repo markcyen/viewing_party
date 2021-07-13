@@ -94,10 +94,9 @@ RSpec.describe "Dashboard Page" do
     end
 
     it 'displays user created as a host of a viewing party' do
-      require 'pry';binding.pry
-      godfather = MovieFacade.get_movie_details(238)
-      party_1 = Party.create!(host_id: user.id, movie_id: godfather.id, title: "The Godfather", duration: 2, date: "7/16/2021", start_time: "7:00pm")
-      event_1 = Invitation.create!(user: user, party: party_1, status: 0)
+      godfather = MovieService.find_movie(238)
+      party_1 = Party.create!(host_id: @user.id, movie_id: godfather[:id], title: "The Godfather", duration: 2, date: Date.today.strftime('%A, %B %d, %Y'), start_time: Time.now.strftime('%I:%M %p'))
+      event_1 = Invitation.create!(user: @user, party: party_1, status: 0)
       
       within("#id-#{party_1.id}") do
         expect(page).to have_link("The Godfather")
