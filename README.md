@@ -13,14 +13,6 @@ Viewing party is an application in which users can explore movie options and cre
   * Gems installed: `faraday`, `figaro`, `webmock`, `travis`, `rubocop-rails`
 3. Setup the database: `rails db:create`
 
-## API Consumption
-
-This project consumed the Movie DB API located [here](https://developers.themoviedb.org/3/getting-started/introduction).
-
-## Our Schema
-
-![Viewing Party Schema](/app/assets/images/schema.jpg "Viewing Party Schema")
-
 ## Versions
 
 - Ruby 2.7.2
@@ -29,7 +21,19 @@ This project consumed the Movie DB API located [here](https://developers.themovi
 
 Example wireframes to follow are found [here](https://backend.turing.io/module3/projects/viewing_party/wireframes)
 
+## Deployment
+
+This is currently deployed on Heroku [here](https://nameless-cliffs-15605.herokuapp.com/).
+
+## API Consumption
+
+This project consumed the Movie DB API located [here](https://developers.themoviedb.org/3/getting-started/introduction).
+
+## Our Schema
+
+![Viewing Party Schema](/app/assets/images/schema.jpg "Viewing Party Schema")
+
 ## Team
 
-Andrew Smith [Github](https://github.com/IcelandicGambit)
-Mark Yen [Github](https://github.com/markcyen)
+* Andrew Smith [Github](https://github.com/IcelandicGambit)
+* Mark Yen [Github](https://github.com/markcyen)
