@@ -46,7 +46,7 @@ RSpec.describe "Registration Page" do
 
       fill_in 'user[email]', with: email
       fill_in 'user[password]', with: password
-      fill_in 'user[password_confirmation]', with: confirm_password
+      fill_in 'user[password_confirmation]', with: password
 
       click_on 'Register'
 
