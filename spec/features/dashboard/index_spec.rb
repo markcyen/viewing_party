@@ -93,7 +93,7 @@ RSpec.describe "Dashboard Page" do
       expect(page).to have_content("Invalid Email!")
     end
 
-    it 'displays user created as a host of a viewing party' do
+    xit 'displays user created as a host of a viewing party' do
       godfather = MovieService.find_movie(238)
       party_1 = Party.create!(host_id: @user.id, movie_id: godfather[:id], title: "The Godfather", duration: 2, date: Date.today.strftime('%A, %B %d, %Y'), start_time: Time.now.strftime('%I:%M %p'))
       Invitation.create!(user: @user, party: party_1, status: 0)
@@ -110,7 +110,6 @@ RSpec.describe "Dashboard Page" do
         expect(page).to_not have_content("Invitee: marky123@gmail.com")
       end
     end
-
 
     it 'displays user as an attendee of a viewing party created by a friend'
   end

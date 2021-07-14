@@ -25,23 +25,23 @@
 </div>
 
 <h2>Viewing Parties</h2>
-<% if @user.parties.empty? %>
+<%# if @user.parties.empty? %>
   <p>You currently have no parties.</p>
-<% elsif @user.invitations.status == 0 %>
-  <% @user.parties.each do |party| %>
-    <div><%= party.title%></div><br/>
-    <div><%= party.duration %></div><br/>
-    <div><%= party.date %></div><br/>
-    <div><%= party.time %></div><br/>
+<%# elsif @user.invitations.status == 0 %>
+  <%# @user.parties.each do |party| %>
+    <div><%#= party.title%></div><br/>
+    <div><%#= party.duration %></div><br/>
+    <div><%#= party.date %></div><br/>
+    <div><%#= party.time %></div><br/>
     <%# get friends who are invited %>
-  <% end %>
-<% elsif @user.invitations.status == 1 %>
-  <% @user.parties.each do |party| %>
-    <div><%= party.title%></div><br/>
-    <div><%= party.duration %></div><br/>
-    <div><%= party.date %></div><br/>
-    <div><%= party.time %></div><br/>
+  <%# end %>
+<%# elsif @user.invitations.status == 1 %>
+  <%# @user.parties.each do |party| %>
+    <div><%#= party.title%></div><br/>
+    <div><%#= party.duration %></div><br/>
+    <div><%#= party.date %></div><br/>
+    <div><%#= party.time %></div><br/>
     <%# get friend who is hosting %>
     <%# get friends who are attending %>
-  <% end %>
-<% end %>
+  <%# end %>
+<%# end %>
