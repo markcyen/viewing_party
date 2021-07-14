@@ -13,13 +13,13 @@
 <% if params[:search] %>
   <section id="search_movies">
     <% @search_movie.each do |movie| %>
-      <div><%= movie.title %> <%=movie.vote_average %></div><br/>
+      <div><%= link_to "#{movie.title}", "/movies/#{movie.id}" %> <%=movie.vote_average %></div><br/>
     <% end %>
   </section>
 <% else %>
   <section id="top_movies">
     <% @top_40.each do |movie| %>
-      <div> <%= movie.title %> <%= movie.vote_average %> </div> <br/>
+      <div> <%= link_to "#{movie.title}", "/movies/#{movie.id}" %> <%= movie.vote_average %> </div> <br/>
     <% end %>
   </section>
 <% end %>
