@@ -12,4 +12,5 @@ Rails.application.routes.draw do
 
   post '/friends', to: 'friends#create'
   get '/movies', to: 'movies#index'
+  get '/movies/:movie_id', to: 'movies#show'
 end
