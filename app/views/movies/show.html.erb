@@ -1,0 +1,25 @@
+<h1>Welcome <%= @user.email %>!</h1>
+
+<h4><%= link_to "Log Out", "/logout", method: :delete %></h4>
+
+<h2><%= @movie.title %></h2>
+
+<h3>Vote Average: <%= @movie.vote_average %></h3>
+<h3>Runtime: <%= @movie.duration %>min</h3>
+<h3>Genre(s): <% @movie.list_genres.each { |genre| genre }.join(', ').html_safe %></h3>
+<h3>Summary:</h3>
+<h2><%= @movie.summary %></h2>
+
+<h2>Cast:</h2>
+<section id="cast-<%= @movie.id %>">
+  <% @movie.list_of_10_cast_members(@movie.id).each do |cast| %>
+    <h3><%= cast %></h3>
+  <% end %>
+</section>
+
+<h2><%= @movie.list_reviews(@movie.id).size %> Reviews</h2>
+<section id="reviews-<%= @movie.id %>">
+  <% @movie.list_reviews(@movie.id).each do |author_review| %>
+    <h3><%= author_review %></h3>
+  <% end %>
+</section>

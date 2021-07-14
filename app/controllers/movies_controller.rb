@@ -8,4 +8,9 @@ class MoviesController < ApplicationController
       @search_movie = MovieFacade.search_for_movies(params[:search])
     end
   end
+
+  def show
+    @user = current_user
+    @movie = MovieFacade.get_movie_details(params[:movie_id])
+  end
 end
