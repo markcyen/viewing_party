@@ -120,3 +120,21 @@ def list_godfather_search_stub
     stub_request(:get, "https://api.themoviedb.org/3/search/movie?api_key=#{ENV['api_key']}&language=en-US&page=2&query=godfather").
     to_return(status: 200, body: response_body_2, headers: {})
 end
+
+def find_movie_stub
+  response_body = File.read('spec/fixtures/shawshank_details.json')
+  stub_request(:get, "https://api.themoviedb.org/3/movie/278?api_key=#{ENV['api_key']}&language=en-US").
+    to_return(status: 200, body: response_body, headers: {})
+end
+
+def find_cast_stub
+  response_body = File.read('spec/fixtures/shawshank_cast.json')
+  stub_request(:get, "https://api.themoviedb.org/3/movie/278/credits?api_key=#{ENV['api_key']}&language=en-US").
+    to_return(status: 200, body: response_body, headers: {})
+end
+
+def find_reviews_stub
+  response_body = File.read('spec/fixtures/shawshank_reviews.json')
+  stub_request(:get, "https://api.themoviedb.org/3/movie/278/reviews?api_key=#{ENV['api_key']}&language=en-US").
+    to_return(status: 200, body: response_body, headers: {})
+end

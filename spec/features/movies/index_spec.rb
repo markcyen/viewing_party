@@ -9,7 +9,6 @@ RSpec.describe "Movie Index" do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
 
     visit '/discover'
-
   end
 
   describe 'top movies' do
@@ -21,7 +20,7 @@ RSpec.describe "Movie Index" do
       expect(page.status_code).to eq(200)
       movie_list = find("#top_movies").all("div") 
       expect(movie_list.size).to eq(40)
-  
+
       within("#top_movies") do
         expect(page).to have_content("The Shawshank Redemption")
         expect(page).to have_content("Gabriel's Inferno Part II")
