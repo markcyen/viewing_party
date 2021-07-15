@@ -25,4 +25,43 @@
 </div>
 
 <h2>Viewing Parties</h2>
-
+<% if @user.parties.empty? %>
+  <p>You currently have no parties.</p>
+<% else %>
+  <% @user.invitations.each do |invitation| %>
+    <% if invitation.status == "host" %>
+      <section id="hosted">
+        <% @user.parties.each do |party| %>
+          <div>Hosting</div><br/>
+          <div><%= link_to party.title, "/movies/#{party.movie_id}" %></div><br/>
+          <div>Party Length: <%= party.duration %>min</div><br/>
+          <div>Date: <%= party.date %></div><br/>
+          <div>Start Time: <%= party.start_time %></div><br/>
+          <% party.users.each do |user| %>
+            <% if @user == user %>
+              <div></div><br/>
+            <% else %>
+              <div><%= user.email %></div><br/>
+            <% end %>
+          <% end %>
+        <% end %>
+      </section>
+    <% else %>
+      <section id="invited">
+      <% invitation.status == "attendee" %>
+        <% @user.parties.each do |party| %>
+          <div><%= party.title%></div><br/>
+          <div><%= party.duration %></div><br/>
+          <div><%= party.date %></div><br/>
+          <div><%= party.start_time %></div><br/>
+          <% party.users.each do |user| %>
+            <% if @user == user %>
+              <div style="font-weight: bold;"><%= user.email %></div><br/>
+            <% else %>
+              <div><%= user.email %></div><br/>
+            <% end %>
+          <% end %>
+        <% end %>
+    <% end %>
+  <% end %>
+<% end %>
