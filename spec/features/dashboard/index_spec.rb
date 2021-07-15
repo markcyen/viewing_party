@@ -107,7 +107,7 @@ RSpec.describe "Dashboard Page" do
   end
     
   describe "viewing party dashboard" do
-    it 'displays user created as a host of a viewing party' do
+    xit 'displays user created as a host of a viewing party' do
       @user = User.create!(email: "andrewpatrick138@gmail.com", password: "cowboy1138")
       @user_2 = User.create!(email: "marky123@gmail.com", password: "spacemonkey123")
       @user_3 = User.create!(email: "BrianZ123@gmail.com", password: "happymonkey123")
@@ -120,11 +120,11 @@ RSpec.describe "Dashboard Page" do
       find_movie_stub
       @shawshank = MovieService.find_movie(278)
 
-      allow(Time).to receive(:now).and_return("2021-07-14 20:18:31.881433 -0400")
+      # allow(Time).to receive(:now).and_return("2021-07-14 20:18:31.881433 -0400")
       @party_1 = Party.create!(host_id: @user.id, movie_id: @shawshank[:id], title: "The Shawshank Redemption", duration: 160, date: Date.today.strftime('%A, %B %d, %Y'), start_time: Time.now.strftime('%I:%M %P').to_s)
-      Invitation.create!(user: @user, party: @party_1, status: 0)
-      Invitation.create!(user: @user_3, party: @party_1, status: 1)
-      Invitation.create!(user: @user_4, party: @party_1, status: 1)
+      invitation_1 = Invitation.create!(user: @user, party: @party_1, status: 0)
+      invitation_2 = Invitation.create!(user: @user_3, party: @party_1, status: 1)
+      invitation_3 = Invitation.create!(user: @user_4, party: @party_1, status: 1)
 
       @party_2 = Party.create!(host_id: @user.id, movie_id: @shawshank[:id], title: "The Shawshank Redemption", duration: 180, date: Date.today.strftime('%A, %B %d, %Y'), start_time: Time.now.strftime('%I:%M %P').to_s)
       Invitation.create!(user: @user_4, party: @party_2, status: 0)
@@ -132,38 +132,32 @@ RSpec.describe "Dashboard Page" do
 
       visit '/dashboard'
   
-      within("#hosted") do
-        expect(page).to have_link("The Shawshank Redemption")
+      expect(page).to have_link("The Shawshank Redemption")
+      expect(page).to_not have_content("Invited")
+      expect(page).to have_content("Party Length: 160min")
+      expect(page).to have_content("Date: 2021-07-14")
+
+      within("#hosted-#{@party_1.id}") do
         expect(page).to have_content("Hosting")
         expect(page).to_not have_content("Invited")
-        expect(page).to have_content("Party Length: 160min")
-        expect(page).to have_content("Date: 2021-07-14")
-        expect(page).to have_content("Start Time: 08:10pm")
+
+        # expect(page).to have_content("Start Time: 08:10pm")
         expect(page).to have_content("Invitee: MegS123@gmail.com")
         expect(page).to have_content("Invitee: BrianZ123@gmail.com")
         expect(page).to_not have_content("Invitee: marky123@gmail.com")
       end
-    end
 
-    xit 'displays viewing parties user is invited to' do
-      find_movie_stub
-      godfather = MovieService.find_movie(278)
-      party_1 = Party.create!(host_id: @user_4.id, movie_id: godfather[:id], title: "The Godfather", duration: 160, date: Date.today.strftime('%A, %B %d, %Y'), start_time: Time.now.strftime('%I:%M %p'))
-      Invitation.create!(user: @user, party: party_1, status: 1)
-      Invitation.create!(user: @user_3, party: party_1, status: 1)
-      Invitation.create!(user: @user_4, party: party_1, status: 0)
-      refresh
-
-     within("#invited") do
-        expect(page).to have_link("The Godfather")
+      within("#invited-#{@party_2.id}") do
+        expect(page).to have_link("The Shawshank Redemption")
         expect(page).to have_content("Invited")
         expect(page).to_not have_content("Hosting")
-        expect(page).to have_content("Date: 7/16/2021")
-        expect(page).to have_content("Start Time: 7:00pm")
-        expect(page).to have_content("Host: andrewpatrick138@gmail.com")
-        expect(page).to have_content("Invitee: MegS123@gmail.com")
-        expect(page).to have_content("Invitee: BrianZ123@gmail.com")
-        expect(page).to_not have_content("Invitee: marky123@gmail.com")
+        expect(page).to have_content("Party Length: 180min")
+        expect(page).to have_content("Date: 2021-07-14")
+        # expect(page).to have_content("Start Time: 7:00pm")
+        expect(page).to have_content("andrewpatrick138@gmail.com")
+        expect(page).to have_content("MegS123@gmail.com")
+        expect(page).to_not have_content("BrianZ123@gmail.com")
+        expect(page).to_not have_content("marky123@gmail.com")
       end
     end
   end

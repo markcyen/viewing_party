@@ -6,7 +6,7 @@
 
 <h3>Vote Average: <%= @movie.vote_average %></h3>
 <h3>Runtime: <%= @movie.duration %>min</h3>
-<h3>Genre(s): <% @movie.list_genres.each { |genre| genre }.join(', ').html_safe %></h3>
+<h3>Genre(s): <%= @movie.list_genres.each { |genre| genre }.join(', ').html_safe %></h3>
 <h3>Summary:</h3>
 <h2><%= @movie.summary %></h2>
 
