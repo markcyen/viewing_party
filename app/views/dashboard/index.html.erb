@@ -29,8 +29,9 @@
   <p>You currently have no parties.</p>
 <% else %>
   <% @user.parties.each do |party| %>
+    <% party. %>
     <% party.invitations.each do |invitation| %>
-      <% if invitation.status == "host" %>
+      <% if invitation.status == "host" %> # create partial
         <section id="hosted-<%= party.id %>">
         <div>Hosting</div>
         <div><%= link_to party.title, "/movies/#{party.movie_id}" %></div><br/>

@@ -9,7 +9,7 @@ class FriendsController < ApplicationController
       elsif @user.friends.include?(friend)
         flash[:notice] = 'You entered a friend who already exists on your list!'
       else !@user.friends.include?(friend)
-        # @user.friendships.create!(friend: friend)
+        # @user.friendships.create!(friend: friend) {perhaps add friend.id}
         @user.friends.push(friend)
       end
     else
